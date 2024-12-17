@@ -1,0 +1,42 @@
+<launch>
+    <!-- wall -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_shelf_left_3" args="-0.425 0.95 0.72 0.0 0.0 0.0 1.0 odom shelf_left_3"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_shelf_left_2" args="-0.425 0.95 0.37 0.0 0.0 0.0 1.0 odom shelf_left_2"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_shelf_left_4" args="-0.425 0.95 1.07 0.0 0.0 0.0 1.0 odom shelf_left_4"/>
+
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_right_wall" args="0.265 -1.1 1.107 0.0 0.0 0.0 1.0 odom right_wall"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_left_wall" args="0.0 1.25 0.772 0.0 0.0 0.0 1.0 odom left_wall"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_front_desk" args="1.31 0.0 0.7 0.0 0.0 0.0 1.0 odom front_desk"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_front_desk2" args="1.31 0.3 0.7 0.0 0.0 0.0 1.0 odom front_desk2"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_back_desk" args="-0.86 0 0.42 0.0 0.0 0.0 1.0 odom back_desk"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_right_back_desk" args="-0.85 -0.71 0.62 0.0 0.0 0.0 1.0 odom right_back_desk"/>
+
+
+    <!-- object -->
+
+
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_side_start" args="1.36 -0.58 0.75 0.0 0.0 0.0 1.0 odom side_start"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_center_start" args="1.35 -0.15 0.75 0.0 0.0 0.0 1.0 odom center_start"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_center_target" args="1.35 0.0 0.75 0.0 0.0 0.0 1.0 odom center_target"/>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_back_target" args="-1.05 0 0.42 0.0 0.0 0.0 1.0 odom back_target"/>
+
+
+
+
+
+
+
+
+</launch>
