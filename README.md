@@ -9,7 +9,9 @@ This is for ICRA2025. There are three modes for the egocentric control: `baselin
 
 - The `egocentric` is the noval control method also called `notouchpad` methodwhich prensented in the paper. It abandons the tradition key-press control. Instead, it allows the user to control the entire robot only use arm movement and head rotation. To be more specific, for the arm control, there exists a workspace for the arm which is calculated through manuverability. In which, it guarantes that no collsions with other part and no singularity. WHen the robot end-effectors are within the workspace, it strictly follows the user's arm movement. However, when the robot end-effectors hit the boundary, depending on which boundary it hits, the robot will adjust base or torso. Similarly, the head can also control the base rotation and torso up/down movement Safety 
 
-- The `Combine` allows the users to access the both above control method, which means the robot end-effectors will
+- The `Combine` allows the users to access the both above control method, which means the robot end-effectors will remain in the workspace and will activate base and torso control when hit the boundary while the user can also control the base and torso through key-pressing.
+
+## Usage
  
 To activate the Tiago robot, first git the repository(which should be done in the lab computer). Connect to the robot first and then open another terminal with the following command：
 
@@ -19,4 +21,10 @@ IP
 cd Tiago_dual_robot
 source devel/setup.bash
 ```
+
+To activate the `baseline`, use the following code:
+
+`roslaunch vive_teleop vive_teleop `
+
+
 
