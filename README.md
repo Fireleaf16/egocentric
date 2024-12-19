@@ -53,6 +53,20 @@ This section brefly illustrates the function of each `.py` in folder `scripts`, 
 
 - `data_recorder_continue.py` record controller data, robot frame data, robot to target data and all the triggered warnings.
 
-- `ee_publisher.py` original file that only publish the robot end-effector with respect to the robot base frame.
+- `ee_publisher.py` original file that only publish the warning whether robot end-effector with respect to the robot base frame is too large.
+
+- `ee_publisher_fall.py` new version of tracking all the updated warnings including `arm_above_desk` which will freeze the torso from going down (up and down if task is shelf). `arm_move_collsion` which will freeze the base if arm is too close to the obstacle. `arm_next_target_collision` which will freeze the arm moving if it detects the user next move will hit the obstacle. And all the boundary warnings.
+
+- `vive_pose_mapping.py` the old version that maps all the user movement to the robot end effector.
+
+- `vive_pose_mapping_continue.py` the second version that maps all the user movement to the robot end effector and if the arm reaches the boundary, the arm will stop moving.
+
+- `vive_pose_mapping_fall.py` the latest version that maps all the user movement to the robot end effector and if the arm reaches the boundary, it will stop moving across the boundary but can rotate and sliding along the boundary.
+
+- `vive_teleop_continue.py` the base, torso, head control for the `combine` method.
+
+- `vive_teleop_continue_notouchpad.py` the base, torso, head control for the `egocentric` method.
+
+- `vive_teleop_v2.py` the base, torso, head control for the `base` method.
 
 
