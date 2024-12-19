@@ -49,6 +49,10 @@ There exists two forms of UI. The `ui_baseline.py` is for the `baseline` method 
 
 This section brefly illustrates the function of each `.py` in folder `scripts`, for more detail information please read the comments within each file.
 
+- `rand.py` gives a random series contains 1-6, which decides the user's task order.
 
+- `data_recorder_continue.py` record controller data, robot frame data, robot to target data and all the triggered warnings.
+
+- `ee_publisher.py` original file that only publish the robot end-effector with respect to the robot base frame.
 
 
