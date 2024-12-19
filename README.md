@@ -24,7 +24,17 @@ source devel/setup.bash
 
 To activate the `baseline`, use the following code:
 
-`roslaunch vive_teleop vive_teleop `
+`roslaunch vive_teleop vive_teleop_fall.launch sim=false data_record=false rviz=true`
+
+To activate the `egocentric`, use the following code:
+
+`roslaunch vive_teleop vive_teleop_continue_notouchpad.launch sim=false data_record=false rviz=true`
+
+To activate the `combine`, use the followwing code:
+
+`roslaunch vive_teleop vive_teleop_continue_fall.launch sim=false data_record=false rviz=true`
+
+
 
 
 
