@@ -1,4 +1,4 @@
-# egocentric
+# Egocentric Control for Tiago++ robot
 This python codes with scripts and launch files to control the Tiago++ robot with an Omni base.
 
 ## Features
