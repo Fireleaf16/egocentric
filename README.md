@@ -37,7 +37,11 @@ To activate the `combine`, use the followwing code:
 
 ## UI
 
-There exists two forms of UI. The 
+There exists two forms of UI. The `ui_baseline.py` is for the `baseline` method and `ui_ego` is for the `egocentric` and `combine` method.
+
+` `ui_baseline.py` adds obstacle warnings, obstacle frames and robot's end-effector and elbow current location with respect to the base frame (torso_lift_link). 
+
+- `ui_ego.py` besides everything above, it adds the boundary for the workspace and warnings for arm reaches the boundaries.
 
 
 
