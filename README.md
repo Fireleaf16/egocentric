@@ -43,7 +43,12 @@ There exists two forms of UI. The `ui_baseline.py` is for the `baseline` method 
 
 - `ui_ego.py` besides everything above, it adds the boundary for the workspace and warnings for arm reaches the boundaries.
 
-- For usage, in you workspace `python3 ui_baseline.py/ui_ego.py`. Remember the connect to the Unity first.
+- For usage, in you workspace `python3 ui_baseline.py/ui_ego.py`. Remember to connect to the Unity first.
+
+## Scripts overview
+
+This section brefly illustrates the function of each `.py` in folder `scripts`, for more detail information please read the comments within each file.
+
 
 
 
