@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-This script is used for mapping the HTC vive controller pose to the robot arm
+This script is used for mapping the HTC vive controller pose to the robot arm with workspace boundary and limit.
 
 
 Author: Yichen Xie
